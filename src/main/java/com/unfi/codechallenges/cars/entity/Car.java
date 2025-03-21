@@ -45,6 +45,13 @@ public class Car {
         this.year = year;
     }
 
+    public Car(String make, String model, String year, String vin) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.vin = vin;
+    }
+
     @PrePersist
     protected void onCreate() {
         createdAt = LocalDateTime.now();
